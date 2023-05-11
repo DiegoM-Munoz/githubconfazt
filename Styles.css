@@ -1,3 +1,9 @@
-#title{
+#titulo{
+    display: flex;
     background-color: brown;
+    color: blue
+}
+
+.subTitulo{
+    color: chocolate;
 }
