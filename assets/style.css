@@ -10,6 +10,11 @@
     line-height: 3rem;
     text-align: center;
     cursor: pointer;
+    z-index: 27;
+    transition: all 0.5s cubic-bezier(0.075, 0.82, 0.165, 1.1);
+}
+#menu .fa-times {
+    transform: rotate(-180deg);
 }
 #navbar {
     position: fixed;
@@ -18,8 +23,17 @@
     border: 0.1rem solid blue;
     padding: 1rem 1.5rem 1rem 1rem;
     border-radius: 1rem;
+    z-index: 4;
+    transform: scale (0);
+    opacity: 0;
+    transform-origin: top right;
+    transition: all 0.5s cubic-bezier(0.075, 0.82, 0.165, 1.1);
 }
-#navbar a {
+#navbar.navbar-toggle{
+    transform: scale(1);
+    opacity: 1;
+}
+#navbar a{
     display: block;
     padding: 0.5rem 7rem 0.5rem 1rem;
     text-decoration: none;
@@ -27,4 +41,9 @@
     font-weight: bold;
     font-size: 1.25rem;
     border-radius: 0.5rem;
+} 
+#navbar a:hover{
+    color: blue;
+    background-color: lavender;
+    transition: all 1s ease;
 }

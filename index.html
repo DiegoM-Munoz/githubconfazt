@@ -19,5 +19,13 @@
     <h2>Este es mi perfil</h2>
     <p>En esta pagina voy a describir toda mi trayectoria en el mundo de la programación</p>
     <p>Inicié en el mundo de la programación en 2022 al comprar la suscripción a Platzi, con el curso "Curso básico de programación".</p>
+    <script>
+        const menu = document.getElementById('menu');
+        const navbar = document.getElementById('navbar');
+        menu.addEventListener('click', () => {
+            menu.classList.toggle('fa-times');
+            navbar.classList.toggle('navbar-toggle');
+        })
+    </script>
 </body>
 </html>
