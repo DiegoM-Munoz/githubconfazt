@@ -13,11 +13,12 @@
     z-index: 27;
     transition: all 0.5s cubic-bezier(0.075, 0.82, 0.165, 1.1);
 }
-#menu .fa-times {
+/* #menu .fa-times {
     transform: rotate(-180deg);
-}
+} */
 #navbar {
     position: fixed;
+    background-color: white;
     top: 1.2rem;
     right: 2.2rem;
     border: 0.1rem solid blue;
