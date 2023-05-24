@@ -1,3 +1,124 @@
-#titulo{
-    color: blue;
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+.navigation {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    overflow: hidden;
+}
+
+/* ESTOS ESTILOS SON APLICADOS SIN NECESIDAD DE QUE LOS CONTENEDORES TENGAN LA CLASE ESPECIFICADA, POR SER HIJOS DE <nav> */
+.navigation ul {
+    position: relative;
+}
+
+.navigation ul li {
+    text-align: center;
+    list-style: none;
+}
+
+.navigation ul li a {
+    color: #333;
+    text-decoration: none;
+    font-size: 3em;
+    padding: 5px 20px;
+    display: inline-flex;
+    font-weight: 700;
+    transition: 0.5s;
+}
+
+/* Cambia el color de todos los elementos dentro del '<ul>', dentro del '<nav>' al pasar el mouse por encima de alguno de los '<li>' */
+.navigation ul:hover li a{
+    color: #0001;
+}
+
+/* Este efecto se aplica unicamente al <a> (dentro del <li> dentro del <ul>) */
+.navigation ul li:hover a {
+    color: #000;
+    background: #fff;
+}
+
+/* Explicación de las propiedades y estilos:
+content: '';: Define el contenido del pseudo-elemento como un valor vacío. Esto se usa comúnmente para crear elementos visuales adicionales.
+position: absolute;: Establece la posición del pseudo-elemento de manera absoluta con respecto a su contenedor o al elemento padre.
+top: 50%;: Posiciona el pseudo-elemento verticalmente en el centro del elemento padre.
+left: 40%;: Posiciona el pseudo-elemento horizontalmente al 40% del ancho del elemento padre.
+transform: translate(-50%, -50%);: Aplica una transformación al pseudo-elemento para desplazarlo exactamente en el centro tanto vertical como horizontalmente.
+display: flex;: Establece el modelo de diseño flexible (flex) en el pseudo-elemento y sus elementos secundarios.
+justify-content: center;: Centra horizontalmente los elementos secundarios del pseudo-elemento dentro de él.
+align-items: center;: Centra verticalmente los elementos secundarios del pseudo-elemento dentro de él.
+font-size: 2.5em;: Define el tamaño de la fuente para el contenido del pseudo-elemento.
+color: rgba(0, 0, 0, .1);: Establece el color de la fuente del pseudo-elemento como un tono de negro con una ligera opacidad.
+border-radius: 50%;: Aplica un radio de borde circular al pseudo-elemento para que tenga forma de círculo.
+z-index: -1;: Establece un índice de apilamiento negativo para que el pseudo-elemento se coloque detrás del contenido principal.
+opacity: 0;: Establece la opacidad del pseudo-elemento a cero, lo que lo hace inicialmente invisible.
+font-style: 900;: Aplica un estilo de fuente negrita o extra negrita al contenido del pseudo-elemento.
+text-transform: uppercase;: Convierte el texto del pseudo-elemento a letras mayúsculas.
+letter-spacing: 500px;: Define un espaciado entre letras muy amplio para crear un efecto de dispersión de letras.
+transition: letter-spacing 0.5s, left 0.5s;: Especifica una transición suave de 0.5 segundos para las propiedades "letter-spacing" y "left", lo que proporciona una animación cuando estas propiedades cambian. */
+
+.navigation ul li a::before {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 40%;
+    transform: translate(-50%, -50%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 2.5em;
+    color: rgba(0, 0, 0, .1);
+    border-radius: 50%;
+    z-index: -1;
+    opacity: 0;
+    font-style: 900;
+    text-transform: uppercase;
+    letter-spacing: 500px;
+    transition: letter-spacing 0.5s, left 0.5s;
+}
+
+/* Explicación de los estilos adicionales:
+content: attr(data-text);: Cambia el contenido del pseudo-elemento al valor del atributo "data-text" del enlace al que se le está aplicando el estilo. Esto significa que mostrará el valor del atributo "data-text" en lugar de un valor vacío.
+opacity: 1;: Establece la opacidad del pseudo-elemento en 1, lo que lo hace completamente visible cuando se produce el evento "hover" en el enlace.
+left: 50%;: Posiciona el pseudo-elemento horizontalmente en el centro del elemento padre cuando se produce el evento "hover".
+letter-spacing: 10px;: Reduce el espaciado entre letras a 10 píxeles, creando un efecto de letras más cercanas entre sí cuando se produce el evento "hover".
+height: 1800px;: Establece la altura del pseudo-elemento en 1800 píxeles. Ten en cuenta que este valor es bastante alto y puede ser específico para el diseño en el que se está utilizando.
+width: 1800px;: Establece el ancho del pseudo-elemento en 1800 píxeles. Al igual que la altura, este valor puede ser específico para el diseño en el que se está utilizando. */
+.navigation ul li a:hover::before {
+    content: attr(data-text);
+    opacity: 1;
+    left: 50%;
+    letter-spacing: 10px;
+    height: 1400px;
+    width: 1400px;
+}
+
+.navigation ul li:nth-child(6n+1) a::before{
+    background: #81ecec;
+}
+
+.navigation ul li:nth-child(6n+2) a::before{
+    background: #ff7675;
+}
+
+.navigation ul li:nth-child(6n+3) a::before{
+    background: #55efc4;
+}
+
+.navigation ul li:nth-child(6n+4) a::before{
+    background: #a29bfe;
+}
+
+.navigation ul li:nth-child(6n+5) a::before{
+    background: #fd79a8;
+}
+
+.navigation ul li:nth-child(6n+6) a::before{
+    background: #ffeaa7;
 }
