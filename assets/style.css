@@ -1,3 +1,11 @@
+.mi_titulo {
+    padding-left: 20px;
+    background-color: royalblue;
+    margin-left: 12px;
+    margin-right: 12px;
+    margin-bottom: 0px;
+}
+
 #menu {
     position: fixed;
     top: 1rem;
