@@ -1,9 +1,10 @@
 * {
-    background-color: whitesmoke;
+    /* background-color: whitesmoke; */
     font-family: 'Lato', sans-serif;
 }
 
 .mi_titulo {
+    background-color: whitesmoke;
     padding-left: 20px;
     background-color: royalblue;
     margin-left: 12px;
@@ -11,6 +12,7 @@
     margin-bottom: 0px;
 }
 #menu {
+    background-color: whitesmoke;
     position: fixed;
     top: 1rem;
     right: 1rem;
@@ -82,4 +84,9 @@
     padding: 5px;
     margin: 5px;
     border-radius: 0.5rem;
+}
+
+.Derechos{
+    color: whitesmoke;
+    background-color: blue
 }
