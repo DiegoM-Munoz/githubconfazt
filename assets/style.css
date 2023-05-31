@@ -66,13 +66,12 @@
 
 .tarjetas_de_texto {
     display: flex;
-    flex-direction: column;
     font-family: 'Lato', sans-serif;
     padding: 5px;
     margin: 5px;
 }
 
-.tarjetas_de_texto section{
+.tarjetas_de_texto p{
     display: flex;
     font-family: 'Lato', sans-serif;
     background-color: whitesmoke;
