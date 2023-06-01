@@ -3,17 +3,29 @@
     font-family: 'Lato', sans-serif;
 }
 
+.Foto-perfil {
+    width: 50px;
+    height: auto;
+    border: 1px solid black;
+    border-radius: 5px;
+    margin: 5px;
+}
+
 .mi_titulo {
     padding-left: 20px;
     background-color: royalblue;
     margin-left: 12px;
     margin-right: 24px;
     margin-bottom: 0px;
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: flex-end;
+    align-items: center;
 }
 #menu {
     position: fixed;
-    top: 1rem;
-    right: 1rem;
+    top: 1.75rem;
+    right: 2rem;
     background-color: blue;
     color: whitesmoke;
     width: 3rem;
@@ -34,11 +46,11 @@
     font-family: 'Lato', sans-serif;
     position: fixed;
     background-color: whitesmoke;
-    top: 1.2rem;
-    right: 2.2rem;
+    top: 1.7rem;
+    right: 2rem;
     border: 0.1rem solid blue;
     padding: 1rem 1.5rem 1rem 1rem;
-    border-radius: 1rem;
+    border-radius: 1.4rem;
     z-index: 4;
     transform: scale (0);
     opacity: 0;
