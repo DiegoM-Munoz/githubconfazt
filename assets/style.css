@@ -86,7 +86,23 @@
     margin: 5px;
 }
 
-.tarjetas_de_texto section{
+#home {
+    background-color: gray;
+    width: auto;
+    height: 720px;
+}
+#about {
+    background-color: pink;
+    width: auto;
+    height: 720px;
+}
+#contact {
+    background-color: goldenrod;
+    width: auto;
+    height: 720px;
+}
+
+#parrafo{
     display: flex;
     font-family: 'Lato', sans-serif;
     background-color: whitesmoke;

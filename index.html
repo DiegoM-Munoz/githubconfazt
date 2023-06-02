@@ -21,25 +21,41 @@
   <body>
     <div id="menu" class="fas fa-bars"></div>
     <div id="navbar">
-      <a href="#">Home</a>
-      <a href="#">About</a>
-      <a href="#">Contact</a>
+      <!-- Se asigna el id de cada sección de "href="#" como enlace interno del HTML (Lo que hace que al seleccionar una opción se desplace a ella)-->
+      <a href="#home">Home</a>
+      <a href="#about">About</a>
+      <a href="#contact">Contact</a>
     </div>
     <!-- para escribir la dirección de la imagen no es necesario agregar el "." para hacer referencia a que inicie a buscar la imagen desde la misma carpeta del proyecto-->
     <h1 class="mi_titulo">Este es mi perfil
       <img src="carpetaIgnorada/Imagenes/foto_perfil.jpg" alt="Foto de Perfil" class="Foto-perfil">
     </h1>
     <div class="tarjetas_de_texto">
-      <section id="primerParrafo">
+      <section id="home">
+        <h2>Home</h2>
+        <p>Here i'm going to write everything about home
+        </p>
+      </section>
+      <section id="about">
+        <h2>About</h2>
+        <p>Here i'm going to write everything about About
+        </p>
+      </section>
+      <section id="contact">
+        <h2>Contact</h2>
+        <p>Here i'm going to write everything about Contact
+        </p>
+      </section>
+      <section id="parrafo">
         En esta pagina voy a describir toda mi trayectoria en el mundo de la
         programación
       </section>
-      <section id="segundoParrafo">
+      <section id="parrafo">
         Inicié mis estudios en el mundo de la programación en noviembre 2022 al
         adquirir la suscripción a Platzi, con el curso "Curso básico de
         programación".
       </section>
-      <section id="tercerParrafo">
+      <section id="parrafo">
         A medida que voy avanzando en este mundo, me doy cuenta que hay muchas
         cosas que aprender. Algo muy interesante en el mundo de la programación,
         es que así como hay tanto que aprender, también hay mucha gente
@@ -48,7 +64,7 @@
         tutoriales de cómo darle estilo a una pagina, usos de etiquetas,
         propiedades, comandos, etc.
       </section>
-      <section id="cuartoParrafo">
+      <section id="parrafo">
         Este cuarto Parrafo es solo una prueba de la actualización del footer
       </section>
       <footer class="Derechos">
