@@ -23,6 +23,7 @@
     justify-content: flex-end;
     align-items: center;
 }
+
 #menu {
     background-color: whitesmoke;
     position: fixed;
@@ -39,9 +40,11 @@
     z-index: 27;
     transition: all 0.5s cubic-bezier;
 }
+
 #menu .fa-times {
     transform: rotate(-180deg);
 }
+
 #navbar {
     display: grid;
     flex-direction: column;
@@ -59,11 +62,13 @@
     transform-origin: top right;
     transition: all 0.8s cubic-bezier;
 }
-#navbar.navbar-toggle{
+
+#navbar.navbar-toggle {
     transform: scale(1);
     opacity: 1;
 }
-#navbar a{
+
+#navbar a {
     display: block;
     padding: 0.5rem 7rem 0.5rem 1rem;
     text-decoration: none;
@@ -71,8 +76,9 @@
     font-weight: bold;
     font-size: 1.25rem;
     border-radius: 0.5rem;
-} 
-#navbar a:hover{
+}
+
+#navbar a:hover {
     color: blue;
     background-color: lavender;
     transition: all 1s ease;
@@ -91,18 +97,20 @@
     width: auto;
     height: 720px;
 }
+
 #about {
     background-color: pink;
     width: auto;
     height: 720px;
 }
+
 #contact {
     background-color: goldenrod;
     width: auto;
     height: 720px;
 }
 
-#parrafo{
+#parrafo {
     display: flex;
     font-family: 'Lato', sans-serif;
     background-color: whitesmoke;
@@ -114,7 +122,7 @@
     border-radius: 0.5rem;
 }
 
-.Derechos{
+.Derechos {
     color: whitesmoke;
     background-color: blue
 }
