@@ -1,1 +1,2 @@
 carpetaIgnorada
+#Otra forma de ignorar archivos es por medio de su extensión (para ignorar todos los archivos '.jpg' se escribe '*.jpg')
