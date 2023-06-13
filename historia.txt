@@ -13,3 +13,6 @@ git stash 'crea' un segundo commit del commit actual donde se guardan todos los 
 git cherry-pick permite traer un commit especifico de cualquier rama y agregarlo al commit actual.
 
 //GIT CHERRY-PICK ES UNA MALA PRACTICA.
+
+GIT REFLOG
+git reflog muestra el registro de TODOS los movimientos que se han realizado hasta el momento (en todas las ramas). Esto es un beneficio al momento de querer volver a algun movimiento.
