@@ -11,3 +11,5 @@ git stash guarda los avances hasta el momento, sin necesidad de hacer un commit,
 Actualización!!
 git stash 'crea' un segundo commit del commit actual donde se guardan todos los cambios.
 git cherry-pick permite traer un commit especifico de cualquier rama y agregarlo al commit actual.
+
+//GIT CHERRY-PICK ES UNA MALA PRACTICA.
